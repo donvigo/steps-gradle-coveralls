@@ -24,7 +24,7 @@ inputs:
         Path for the gradlew file
       is_required: true
       is_expand: false
-  - coveralls_task: “coveralls”
+  - coveralls_task: coveralls
     opts:
       title: “Coveralls gradle task"
       description: |
