@@ -2,7 +2,7 @@ title: Gradle Coveralls
 summary: |-
   Runs Coveralls with `./gradlew`.
 description: |-
-  Sends code coverage to www.coveralls.io. Uses `./gradlew coveralls` task. You have to configure “org.kt3k.gradle.plugin:coveralls-gradle-plugin” in your project first.
+  Sends code coverage to www.coveralls.io. Uses `./gradlew coveralls` task. You have to configure [org.kt3k.gradle.plugin:coveralls-gradle-plugin](https://github.com/kt3k/coveralls-gradle-plugin) in your project first.
 website: https://github.com/donvigo/steps-gradle-coveralls
 source_code_url: https://github.com/donvigo/steps-gradle-coveralls
 support_url: https://github.com/donvigo/steps-gradle-coveralls/issues
