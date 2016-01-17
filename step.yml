@@ -1,0 +1,41 @@
+title: Gradle Coveralls
+summary: |-
+  Runs Coveralls with `./gradlew`.
+description: |-
+  Runs Coveralls with `./gradlew`. You have to configure “org.kt3k.gradle.plugin:coveralls-gradle-plugin” in your project first.
+website: https://github.com/donvigo/steps-gradle-coveralls
+source_code_url: https://github.com/donvigo/steps-gradle-coveralls
+support_url: https://github.com/donvigo/steps-gradle-coveralls/issues
+host_os_tags:
+  - "ubuntu"
+project_type_tags:
+  - android
+type_tags:
+  - coveralls
+  - gradle
+is_requires_admin_user: false
+is_always_run: false
+is_skippable: true
+inputs:
+  - workdir: $BITRISE_SOURCE_DIR
+    opts:
+      title: "Working directory"
+      description: |
+        Working directory of the step.
+        You can leave it empty to don't change it.
+      is_required: false
+      is_expand: true
+  - gradlew_file_path: "./gradlew"
+    opts:
+      title: "Path for the gradlew file"
+      description: |
+        Path for the gradlew file
+      is_required: true
+      is_expand: true
+  - coveralls_task: “coveralls”
+    opts:
+      title: “Coveralls gradle task"
+      description: |
+        The coveralls task to execute by gradlew
+      is_required: true
+      is_expand: true
