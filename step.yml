@@ -31,4 +31,13 @@ inputs:
         The coveralls task to execute by gradlew
       is_required: true
       is_expand: true
+  - coveralls_repo_token:
+    opts:
+      title: "Coveralls repo token"
+      description: |
+        The secret repo token for your repository, 
+        found at the bottom of your repository's page on Coveralls. 
+        Strongly recommended to keep this variable in "Secret Environment Variables" section.	
+      is_required: true
+      is_expand: true
 outputs: []
